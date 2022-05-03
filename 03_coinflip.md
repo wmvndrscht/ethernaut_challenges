@@ -50,7 +50,6 @@ contract CoinFlip {
 
 With the pseudorandomness of the contract and the fact the source code can be read, we're able to quickly run the code before we submit the answer so we are correct each time.
 
-
 Here's a hacky solution that I deployed via Remix to guess the correct coinflip...10 times!
 
 ```
@@ -76,3 +75,11 @@ contract CoinFlipHack {
   }
 }
 ```
+
+## Moral
+
+Generating random numbers can be difficult in solidity, no native way and smart contracts are public - even local variables and state variables marked as private. Miners also have control over things like blockhashes, timestamps, and whether to include certain transactions - which allows them to bias these values in their favor.
+
+To get cryptographically proven random numbers, you can use Chainlink VRF, which uses an oracle, the LINK token, and an on-chain contract to verify that the number is truly random.
+
+Some other options include using Bitcoin block headers (verified through BTC Relay), RANDAO, or Oraclize).

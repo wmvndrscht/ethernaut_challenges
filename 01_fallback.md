@@ -91,4 +91,3 @@ await contract.sendTransaction({from: player, to: contract.address, value: toWei
 ## Step 3: Withdraw ether
 
 await contract.withdraw();
-

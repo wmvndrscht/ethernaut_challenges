@@ -6,7 +6,10 @@ Claim ownership of the contract below to complete this level.
 
 ## Solution
 
-This challenge was a very simple one. The 'constructor' function was not in fact a constructor and could be called to change the ownership. The solution lists a stark reminder:
+This challenge was a very simple one. The 'constructor' function was not in fact a constructor and could be called to change the ownership. 
+
+## 
+The solution lists a stark reminder:
 
 ```
 That was silly wasn't it? Real world contracts must be much more secure than this and so must it be much harder to hack them right?
@@ -23,3 +26,4 @@ contract Rubixi {
 
 This allowed the attacker to call the old constructor and claim ownership of the contract, and steal some funds. Yep. Big mistakes can be made in smartcontractland.
 ```
+
