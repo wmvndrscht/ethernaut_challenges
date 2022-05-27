@@ -1,19 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
-contract Kill {
+contract Force {/*
 
-    address public owner;
+                   MEOW ?
+         /\_/\   /
+    ____/ o o \
+  /~____  =ø= /
+ (______)__m_m)
 
-    constructor() public {
-        owner = msg.sender;
-    }
-
-    function sendMoney() public payable {
-    }
-
-    function destroySmartContract(address payable _to) public {
-        selfdestruct(_to);
-    }
-
-}
+*/}

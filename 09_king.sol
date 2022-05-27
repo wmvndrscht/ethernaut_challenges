@@ -8,7 +8,7 @@ contract King {
   address payable public owner; // owner can receive eth
 
   constructor() public payable { // payable allows a function to receive ether while being called 
-    owner = msg.sender;  
+    owner = msg.sender;
     king = msg.sender;
     prize = msg.value;
   }
